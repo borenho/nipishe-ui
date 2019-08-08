@@ -1,8 +1,19 @@
 <template>
   <div id="app">
+    <nav-bar />
     <nuxt />
   </div>
 </template>
+
+<script>
+import NavBar from '~/components/shared/NavBar'
+
+export default {
+  components: {
+    NavBar
+  }
+}
+</script>
 
 <style>
 html {
