@@ -3,6 +3,10 @@ export default {
   /*
    ** Headers of the page
    */
+  server: {
+    port: 8000 // Default: 3000
+  },
+
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -40,13 +44,22 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/apollo'
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  // GraphQL vue-apollo configuration
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'https://localhost:3000'
+      }
+    }
+  },
   /*
    ** Build configuration
    */

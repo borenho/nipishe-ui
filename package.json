@@ -13,9 +13,11 @@
     "test": "jest"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
+    "@nuxtjs/apollo": "^4.0.0-rc10",
+    "@nuxtjs/axios": "^5.3.6",
     "ant-design-vue": "^1.1.10",
-    "@nuxtjs/axios": "^5.3.6"
+    "graphql-tag": "^2.10.1",
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
